@@ -111,7 +111,7 @@ namespace WolvenKit.App.ViewModels
                 }
 
             }
-            AddObjects(importablefiles, MainController.Get().ActiveMod.FileDirectory);
+            AddObjects(importablefiles, MainController.Get().ActiveMod.RawDirectory);
 
             //TryGetTextureGroupsCommand.SafeExecute();
             RaisePropertyChanged(nameof(Importableobjects));
