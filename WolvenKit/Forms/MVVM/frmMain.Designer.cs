@@ -37,15 +37,15 @@ namespace WolvenKit
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.toolbarToolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolbarToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripBtnNewMod = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnOpenMod = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnOpenFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripBtnSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnSaveAll = new System.Windows.Forms.ToolStripButton();
-            this.toolStripBtnAssetbrowser = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonLexarMode = new System.Windows.Forms.ToolStripButton();
+            this.toolStripBtnAssetbrowser = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripBtnPack = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnRunGame = new System.Windows.Forms.ToolStripDropDownButton();
@@ -148,7 +148,7 @@ namespace WolvenKit
             this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DLCScriptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-            this.statusToolStrip = new System.Windows.Forms.ToolStrip();
+            this.statusToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.statusLBL = new System.Windows.Forms.ToolStripLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.wkitVersionToolStripLabel = new System.Windows.Forms.ToolStripLabel();
@@ -165,41 +165,39 @@ namespace WolvenKit
             this.MainBackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.visualStudioToolStripExtender2 = new WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender(this.components);
             this.watcher = new System.IO.FileSystemWatcher();
-            this.toolbarToolStrip.SuspendLayout();
+            this.toolbarToolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.statusToolStrip.SuspendLayout();
+            this.statusToolStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.LeftToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watcher)).BeginInit();
             this.SuspendLayout();
             // 
-            // toolbarToolStrip
+            // toolbarToolStrip1
             // 
-            this.toolbarToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolbarToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolbarToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolbarToolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolbarToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripBtnNewMod,
             this.toolStripBtnOpenMod,
             this.toolStripBtnOpenFile,
             this.toolStripSeparator1,
             this.toolStripBtnSave,
             this.toolStripBtnSaveAll,
-            this.toolStripButtonLexarMode,
             this.toolStripBtnAssetbrowser,
+            this.toolStripButtonLexarMode,
             this.toolStripSeparator2,
             this.toolStripBtnPack,
             this.toolStripBtnRunGame,
             this.toolStripSeparator10,
             this.toolStripBtnImportUtil,
             this.toolStripBtnRadishUtil});
-            this.toolbarToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.toolbarToolStrip.Name = "toolbarToolStrip";
-            this.toolbarToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolbarToolStrip.Size = new System.Drawing.Size(36, 635);
-            this.toolbarToolStrip.Stretch = true;
-            this.toolbarToolStrip.TabIndex = 6;
-            this.toolbarToolStrip.Text = "topTS";
+            this.toolbarToolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolbarToolStrip1.Name = "toolbarToolStrip1";
+            this.toolbarToolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolbarToolStrip1.Size = new System.Drawing.Size(1377, 27);
+            this.toolbarToolStrip1.Stretch = true;
+            this.toolbarToolStrip1.TabIndex = 6;
+            this.toolbarToolStrip1.Text = "topTS";
             // 
             // toolStripBtnNewMod
             // 
@@ -207,7 +205,7 @@ namespace WolvenKit
             this.toolStripBtnNewMod.Image = global::WolvenKit.Properties.Resources.NewSolutionFolder_16x;
             this.toolStripBtnNewMod.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnNewMod.Name = "toolStripBtnNewMod";
-            this.toolStripBtnNewMod.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnNewMod.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnNewMod.Text = "New Mod";
             this.toolStripBtnNewMod.Click += new System.EventHandler(this.newModToolStripMenuItem_Click);
             // 
@@ -217,7 +215,7 @@ namespace WolvenKit
             this.toolStripBtnOpenMod.Image = global::WolvenKit.Properties.Resources.OpenFolder_16x;
             this.toolStripBtnOpenMod.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnOpenMod.Name = "toolStripBtnOpenMod";
-            this.toolStripBtnOpenMod.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnOpenMod.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnOpenMod.Text = "Open Mod";
             this.toolStripBtnOpenMod.Click += new System.EventHandler(this.openModToolStripMenuItem_Click);
             // 
@@ -227,14 +225,14 @@ namespace WolvenKit
             this.toolStripBtnOpenFile.Image = global::WolvenKit.Properties.Resources.OpenFile_16x;
             this.toolStripBtnOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnOpenFile.Name = "toolStripBtnOpenFile";
-            this.toolStripBtnOpenFile.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnOpenFile.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnOpenFile.Text = "Open CR2W File";
             this.toolStripBtnOpenFile.Click += new System.EventHandler(this.tbtOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(32, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripBtnSave
             // 
@@ -242,7 +240,7 @@ namespace WolvenKit
             this.toolStripBtnSave.Image = global::WolvenKit.Properties.Resources.SaveStatusBar1_16x_c;
             this.toolStripBtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnSave.Name = "toolStripBtnSave";
-            this.toolStripBtnSave.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnSave.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnSave.Text = "Save";
             this.toolStripBtnSave.Click += new System.EventHandler(this.tbtSave_Click);
             // 
@@ -252,21 +250,10 @@ namespace WolvenKit
             this.toolStripBtnSaveAll.Image = global::WolvenKit.Properties.Resources.SaveAll_16x;
             this.toolStripBtnSaveAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnSaveAll.Name = "toolStripBtnSaveAll";
-            this.toolStripBtnSaveAll.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnSaveAll.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnSaveAll.Text = "Save All";
             this.toolStripBtnSaveAll.ToolTipText = "Save All";
             this.toolStripBtnSaveAll.Click += new System.EventHandler(this.tbtSaveAll_Click);
-            // 
-            // toolStripBtnAssetbrowser
-            // 
-            this.toolStripBtnAssetbrowser.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripBtnAssetbrowser.Image = global::WolvenKit.Properties.Resources.Asset_Browser_16x;
-            this.toolStripBtnAssetbrowser.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtnAssetbrowser.Name = "toolStripBtnAssetbrowser";
-            this.toolStripBtnAssetbrowser.Size = new System.Drawing.Size(32, 24);
-            this.toolStripBtnAssetbrowser.Text = "Asset Browser";
-            this.toolStripBtnAssetbrowser.ToolTipText = "Asset Browser";
-            this.toolStripBtnAssetbrowser.Click += new System.EventHandler(this.OpenDepotAssetBrowserToolStripMenuItem_Click);
             // 
             // toolStripButtonLexarMode
             // 
@@ -274,15 +261,26 @@ namespace WolvenKit
             this.toolStripButtonLexarMode.Image = global::WolvenKit.Properties.Resources.Asset_Browser_Other_Mod_16x;
             this.toolStripButtonLexarMode.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonLexarMode.Name = "toolStripButtonLexarMode";
-            this.toolStripButtonLexarMode.Size = new System.Drawing.Size(32, 24);
+            this.toolStripButtonLexarMode.Size = new System.Drawing.Size(24, 24);
             this.toolStripButtonLexarMode.Text = "Lexar Mode";
             this.toolStripButtonLexarMode.ToolTipText = "Lexar Mode";
             this.toolStripButtonLexarMode.Click += new System.EventHandler(this.OpenModAssetBrowserToolStripMenuItem_Click_1);
             // 
+            // toolStripBtnAssetbrowser
+            // 
+            this.toolStripBtnAssetbrowser.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripBtnAssetbrowser.Image = global::WolvenKit.Properties.Resources.Asset_Browser_16x;
+            this.toolStripBtnAssetbrowser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripBtnAssetbrowser.Name = "toolStripBtnAssetbrowser";
+            this.toolStripBtnAssetbrowser.Size = new System.Drawing.Size(24, 24);
+            this.toolStripBtnAssetbrowser.Text = "Asset Browser";
+            this.toolStripBtnAssetbrowser.ToolTipText = "Asset Browser";
+            this.toolStripBtnAssetbrowser.Click += new System.EventHandler(this.OpenDepotAssetBrowserToolStripMenuItem_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(32, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripBtnPack
             // 
@@ -290,7 +288,7 @@ namespace WolvenKit
             this.toolStripBtnPack.Image = global::WolvenKit.Properties.Resources.package_16xLG;
             this.toolStripBtnPack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnPack.Name = "toolStripBtnPack";
-            this.toolStripBtnPack.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnPack.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnPack.Text = "Pack and Install Mod";
             this.toolStripBtnPack.ToolTipText = "Pack and Install Mod";
             this.toolStripBtnPack.Click += new System.EventHandler(this.toolStripBtnPack_Click);
@@ -307,7 +305,7 @@ namespace WolvenKit
             this.toolStripBtnRunGame.Image = global::WolvenKit.Properties.Resources.witcher3;
             this.toolStripBtnRunGame.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnRunGame.Name = "toolStripBtnRunGame";
-            this.toolStripBtnRunGame.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnRunGame.Size = new System.Drawing.Size(33, 24);
             this.toolStripBtnRunGame.Text = "Launch Game";
             // 
             // launchGameForDebuggingToolStripMenuItem
@@ -348,7 +346,7 @@ namespace WolvenKit
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(32, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripBtnImportUtil
             // 
@@ -356,7 +354,7 @@ namespace WolvenKit
             this.toolStripBtnImportUtil.Image = global::WolvenKit.Properties.Resources.ImportPackage_16x;
             this.toolStripBtnImportUtil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnImportUtil.Name = "toolStripBtnImportUtil";
-            this.toolStripBtnImportUtil.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnImportUtil.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnImportUtil.Text = "Import Utility";
             this.toolStripBtnImportUtil.Click += new System.EventHandler(this.toolStripButtonImportUtil_Click);
             // 
@@ -366,7 +364,7 @@ namespace WolvenKit
             this.toolStripBtnRadishUtil.Image = global::WolvenKit.Properties.Resources.radish_32x;
             this.toolStripBtnRadishUtil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBtnRadishUtil.Name = "toolStripBtnRadishUtil";
-            this.toolStripBtnRadishUtil.Size = new System.Drawing.Size(32, 24);
+            this.toolStripBtnRadishUtil.Size = new System.Drawing.Size(24, 24);
             this.toolStripBtnRadishUtil.Text = "Radish Utility";
             this.toolStripBtnRadishUtil.Click += new System.EventHandler(this.toolStripButtonRadishUtil_Click);
             // 
@@ -1160,30 +1158,30 @@ namespace WolvenKit
             this.dockPanel.Margin = new System.Windows.Forms.Padding(2);
             this.dockPanel.Name = "dockPanel";
             this.dockPanel.ShowDocumentIcon = true;
-            this.dockPanel.Size = new System.Drawing.Size(1341, 635);
+            this.dockPanel.Size = new System.Drawing.Size(1377, 631);
             this.dockPanel.TabIndex = 9;
             this.dockPanel.ActiveDocumentChanged += new System.EventHandler(this.dockPanel_ActiveDocumentChanged);
             // 
-            // statusToolStrip
+            // statusToolStrip1
             // 
-            this.statusToolStrip.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.statusToolStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.statusToolStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.statusToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusToolStrip1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.statusToolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.statusToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.statusToolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLBL,
             this.toolStripProgressBar1,
             this.wkitVersionToolStripLabel,
             this.modNameToolStripLabel,
             this.toolStripSeparator11,
             this.toolStripDropDownButtonGit});
-            this.statusToolStrip.Location = new System.Drawing.Point(0, 688);
-            this.statusToolStrip.Name = "statusToolStrip";
-            this.statusToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.statusToolStrip.Size = new System.Drawing.Size(1377, 27);
-            this.statusToolStrip.TabIndex = 12;
-            this.statusToolStrip.Text = "bottomTS";
+            this.statusToolStrip1.Location = new System.Drawing.Point(0, 688);
+            this.statusToolStrip1.Name = "statusToolStrip1";
+            this.statusToolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.statusToolStrip1.Size = new System.Drawing.Size(1377, 27);
+            this.statusToolStrip1.TabIndex = 12;
+            this.statusToolStrip1.Text = "bottomTS";
             // 
             // statusLBL
             // 
@@ -1283,21 +1281,19 @@ namespace WolvenKit
             // 
             // toolStripContainer1
             // 
+            this.toolStripContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.dockPanel);
             this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1341, 635);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            // 
-            // toolStripContainer1.LeftToolStripPanel
-            // 
-            this.toolStripContainer1.LeftToolStripPanel.Controls.Add(this.toolbarToolStrip);
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 28);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1377, 631);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 57);
             this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(1377, 660);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1377, 631);
             this.toolStripContainer1.TabIndex = 14;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -1322,8 +1318,9 @@ namespace WolvenKit
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 715);
+            this.Controls.Add(this.toolbarToolStrip1);
             this.Controls.Add(this.toolStripContainer1);
-            this.Controls.Add(this.statusToolStrip);
+            this.Controls.Add(this.statusToolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -1336,15 +1333,13 @@ namespace WolvenKit
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.MdiChildActivate += new System.EventHandler(this.frmMain_MdiChildActivate);
             this.Shown += new System.EventHandler(this.frmMain_Shown);
-            this.toolbarToolStrip.ResumeLayout(false);
-            this.toolbarToolStrip.PerformLayout();
+            this.toolbarToolStrip1.ResumeLayout(false);
+            this.toolbarToolStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.statusToolStrip.ResumeLayout(false);
-            this.statusToolStrip.PerformLayout();
+            this.statusToolStrip1.ResumeLayout(false);
+            this.statusToolStrip1.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.LeftToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.LeftToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watcher)).EndInit();
@@ -1355,7 +1350,7 @@ namespace WolvenKit
 
         #endregion
 
-        private ToolStrip toolbarToolStrip;
+        private ToolStrip toolbarToolStrip1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem newModToolStripMenuItem;
@@ -1402,7 +1397,7 @@ namespace WolvenKit
         private ToolStripMenuItem recordStepsToReproduceBugToolStripMenuItem;
         private ToolStripMenuItem reportABugToolStripMenuItem;
         private ToolStripMenuItem packageInstallerToolStripMenuItem;
-        private ToolStrip statusToolStrip;
+        private ToolStrip statusToolStrip1;
         private ToolStripLabel statusLBL;
         private ToolStripProgressBar toolStripProgressBar1;
         private ToolStripMenuItem packProjectToolStripMenuItem;

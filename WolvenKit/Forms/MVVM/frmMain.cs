@@ -578,7 +578,7 @@ namespace WolvenKit
             //visualStudioToolStripExtender1.SetStyle(statusToolStrip, VisualStudioToolStripExtender.VsVersion.Vs2015, new VS2015LightTheme());
             //statusToolStrip.BackColor = SystemColors.HotTrack;
 
-            visualStudioToolStripExtender1.SetStyle(toolbarToolStrip, VisualStudioToolStripExtender.VsVersion.Vs2015, theme);
+            visualStudioToolStripExtender1.SetStyle(toolbarToolStrip1, VisualStudioToolStripExtender.VsVersion.Vs2015, theme);
 
             switch (UIController.GetColorTheme)
             {
@@ -960,7 +960,7 @@ namespace WolvenKit
 
             void SetStatusLabelText(string text) => statusLBL.Text = text;
             void SetStatusProgressbarValue(int val) => toolStripProgressBar1.Value = val;
-            void SetStatusBarColor(Color color) => this.statusToolStrip.BackColor = color;
+            void SetStatusBarColor(Color color) => this.statusToolStrip1.BackColor = color;
         }
         private void AddOutput(string text, WolvenKit.Common.Services.Logtype type = WolvenKit.Common.Services.Logtype.Normal)
         {
