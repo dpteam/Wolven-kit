@@ -417,7 +417,8 @@ namespace WolvenKit.Common
                 return GetDlcCookedRelativePath();
             if (!string.IsNullOrEmpty(GetDlcUncookedRelativePath()))
                 return GetDlcUncookedRelativePath();
-            return "";
+
+            return $"dlc{Name}";
         }
 
         /// <summary>

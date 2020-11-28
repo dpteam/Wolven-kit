@@ -81,8 +81,8 @@ namespace WolvenKit
                 dlcSCR.Checked = true;
 
             // Strings
-            if (Directory.Exists(MainController.Get().ActiveMod.ProjectDirectory + "\\strings")
-                && Directory.GetFiles(MainController.Get().ActiveMod.ProjectDirectory + "\\strings")
+            if (Directory.Exists(Path.Combine(MainController.Get().ActiveMod.ProjectDirectory, "strings"))
+                && Directory.GetFiles(Path.Combine(MainController.Get().ActiveMod.ProjectDirectory, "strings"))
                 .Any(x => x.EndsWith(".w3strings")))
                 modSTR.Checked = true;
 
@@ -101,9 +101,10 @@ namespace WolvenKit
         {
             MainController.Get().Configuration.IsAutoInstallModsDisabled = !checkBoxInstallMod.Checked;
 
-            if (modBDL.Checked | modMD.Checked | dlcBDL.Checked | dlcMD.Checked 
+            if (modBDL.Checked | dlcBDL.Checked | modMD.Checked | dlcMD.Checked 
             | modTEX.Checked | dlcTEX.Checked | modSND.Checked | dlcSND.Checked
-            | modSCR.Checked | dlcSCR.Checked | modSTR.Checked | modCOL.Checked | dlcCOL.Checked)
+            | modSCR.Checked | dlcSCR.Checked | modSTR.Checked | dlcSTR.Checked 
+            | modCOL.Checked | dlcCOL.Checked)
             {
                 DialogResult = System.Windows.Forms.DialogResult.OK;
             }
