@@ -1,4 +1,4 @@
-name: WolvenKit-Check-Build
+name: Main
 on:
   push:
     branches:
@@ -18,13 +18,16 @@ jobs:
         lfs: true
     - name: Checkout LFS objects
       run: git lfs checkout
-    - name: Setup Nuget.exe
+    - name: Setup NuGet.exe for use with actions
       uses: NuGet/setup-nuget@v1.0.5
       with:
         nuget-version: latest
     - name: Restore packages
       run: nuget restore WolvenKit.sln
-    - name: Setup MSBuild.exe
+    - name: setup-msbuild
       uses: microsoft/setup-msbuild@v1
     - name: Build with MSBuild
       run: msbuild  WolvenKit.sln -p:Configuration=Release -p:Platform=x64 -m
+    - uses: actions/upload-artifact@v2
+      with:
+        path: D:\a\Wolven-kit\Wolven-kit\WolvenKit.Console\bin\x64\Release\
