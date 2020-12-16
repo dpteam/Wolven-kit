@@ -30,4 +30,4 @@ jobs:
       run: msbuild  WolvenKit.sln -p:Configuration=Release -p:Platform=x64 -m
     - uses: actions/upload-artifact@v2
       with:
-        path: D:\a\Wolven-kit\Wolven-kit\WolvenKit.Console\bin\x64\Release\
+        path: D:\a\Wolven-kit\
